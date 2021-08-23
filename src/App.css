@@ -1,38 +1,177 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:hover {
+  background-color: #9486eb;
+}
+#nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+nav {
+  height: 60px;
+}
+
+nav li:hover {
+  transition: 0.2s ease-in;
+  color: #0068b5;
+}
+.setBackground {
+  background-color: #b6ddfa !important;
+}
+
+#container,
+#footer {
+  position: relative;
+  top: 100px;
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px gray, -3px 3px 5px gray;
+}
+
+.about .info {
+  background-color: #e5e5e5;
+  padding: 2rem;
+}
+
+/* Flipping Card Conatiner */
+#projects .card-container {
+  height: 300px;
+  width: 300px;
+}
+
+#projects .card-container .card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out;
+  box-shadow: 2px 2px 5px gray;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotateY(0.5turn);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardFront {
+  background-color: #eae9f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cardBack {
+  background-color: #e3e1fa;
+  transform: rotateY(0.5turn);
+}
+
+/* desktop view */
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .about .photo {
+    margin-right: 2.5rem;
+  }
+
+  .about p + div {
+    justify-content: flex-start;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Mobile View */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  nav .line {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Style for hamburger after clicking on it */
+  .secondLine {
+    display: none;
+  }
+  .firstLine {
+    position: inherit;
+    background-color: red;
+    transform: rotate(45deg);
+    transition: all 0.1s ease-out;
+  }
+  .thirdLine {
+    background-color: red;
+    transform: rotate(-45deg);
+    transition: all 0.1s ease-out;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    height: 6.5vh;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 1;
+  }
+
+  nav #nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b6ddfa;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+  }
+
+  .open {
+    clip-path: circle(1100px at 90% -20%) !important;
+    -webkit-clip-path: circle(1450px at 90% -20%) !important;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
   }
 }
