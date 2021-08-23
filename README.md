@@ -4,4 +4,4 @@ This repository contains code for my personal portfolio which I created using Re
 
 ### Screenshot
 
-![screenshot.png](screenshot.png)
+![screenshot.png](/screenshot.png)
