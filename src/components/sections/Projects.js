@@ -15,36 +15,49 @@ export const Projects = () => {
           flist3={"CSS"}
           bHeading={"Summary"}
           bBody={
-            "In this project, I fetched data from XXX website and used the data to clone the netflix design"
+            "In this project, I fetched data from api provided by https://www.themoviedb.org/ website and used the data to clone the netflix design"
           }
           bLinkHead={"Link"}
           bLink={"https://github.com/bibs07/netflix-clone-reactjs"}
         />
         <ProjectCard
-          fHeading={"Netflix Clone"}
+          fHeading={"Porfilio Website"}
+          fBody={"Technologies Used:"}
+          flist1={"ReactJS"}
+          flist2={"HTML"}
+          flist3={"Tailwind CSS & CSS"}
+          bHeading={"Summary"}
+          bBody={
+            "In this project, I created personal portfolio website with the help of ReactJS."
+          }
+          bLinkHead={"Link"}
+          bLink={"https://github.com/bibs07/personal-portfolio-react"}
+        />
+        <ProjectCard
+          fHeading={"Covid Tracker"}
           fBody={"Technologies Used:"}
           flist1={"ReactJS"}
           flist2={"HTML"}
           flist3={"CSS"}
           bHeading={"Summary"}
           bBody={
-            "In this project, I fetched data from XXX website and used the data to clone the netflix design"
+            "In this project, I created simple daily COVID update for Nepal using data obtained from api provided by https://covid19.mohp.gov.np/"
           }
           bLinkHead={"Link"}
-          bLink={"https://github.com/bibs07/netflix-clone-reactjs"}
+          bLink={"https://github.com/bibs07/covid-tracker-nepali"}
         />
         <ProjectCard
-          fHeading={"Netflix Clone"}
+          fHeading={"Calculator"}
           fBody={"Technologies Used:"}
-          flist1={"ReactJS"}
+          flist1={"jQuery"}
           flist2={"HTML"}
-          flist3={"CSS"}
+          flist3={"Bootstrap"}
           bHeading={"Summary"}
           bBody={
-            "In this project, I fetched data from XXX website and used the data to clone the netflix design"
+            "In this project, I created simple calculator using jQuery and designed it using Bootstrap."
           }
           bLinkHead={"Link"}
-          bLink={"https://github.com/bibs07/netflix-clone-reactjs"}
+          bLink={"TBA"}
         />
       </div>
     </section>

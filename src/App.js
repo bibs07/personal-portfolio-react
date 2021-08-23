@@ -1,15 +1,7 @@
-import './App.css';
+import "./App.css";
 
 //Importing components
-import {
-  Nav,
-  About,
-  Skills,
-  Projects,
-  Contact,
-  Footer,
-} from './components/index'
-
+import { Nav, About, Skills, Projects, Footer } from "./components/index";
 
 function App() {
   return (
@@ -19,9 +11,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        {/* <Contact /> */}
       </div>
-        <Footer/>
+      <Footer />
     </div>
   );
 }

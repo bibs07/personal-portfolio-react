@@ -1,4 +1,41 @@
-h2 {
+.card-container {
+  font-size: 1.1rem;
+  color: rgb(72, 0, 139);
+}
+
+.card-container h2 {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.cardFront {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 3rem;
+  padding-left: 1.5rem;
+}
+
+.card-container li {
+  text-align: left;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.cardBack {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.cardBack h2 {
+  margin: 0.8rem 0;
+}
+
+.card-container a {
+  z-index: 5;
+}
+
+.card-container a:hover {
+  color: red;
 }
