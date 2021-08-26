@@ -21,6 +21,19 @@ export const Projects = () => {
           bLink={"https://github.com/bibs07/netflix-clone-reactjs"}
         />
         <ProjectCard
+          fHeading={"Tiktok Clone"}
+          fBody={"Technologies Used:"}
+          flist1={"ReactJS"}
+          flist2={"CSS"}
+          flist3={"Firebase"}
+          bHeading={"Summary"}
+          bBody={
+            "I copied the layout of tiktok and used firebase to store the data to use in this project."
+          }
+          bLinkHead={"Link"}
+          bLink={"https://github.com/bibs07/tiktok-clone-reactJS"}
+        />
+        <ProjectCard
           fHeading={"Porfilio Website"}
           fBody={"Technologies Used:"}
           flist1={"ReactJS"}
@@ -57,7 +70,7 @@ export const Projects = () => {
             "In this project, I created simple calculator using jQuery and designed it using Bootstrap."
           }
           bLinkHead={"Link"}
-          bLink={"TBA"}
+          bLink={"https://github.com/bibs07/calculator-jQuery"}
         />
       </div>
     </section>
