@@ -54,7 +54,7 @@ export const Projects = () => {
           flist3={"CSS"}
           bHeading={"Summary"}
           bBody={
-            "In this project, I created simple daily COVID update for Nepal using data obtained from api provided by https://covid19.mohp.gov.np/"
+            "In this project, I created daily COVID update for Nepal using data obtained from api provided by https://covid19.mohp.gov.np/. It's hosted in https://bsgnews.com/"
           }
           bLinkHead={"Link"}
           bLink={"https://github.com/bibs07/covid-tracker-nepali"}
